@@ -18,7 +18,7 @@ class Node {
     {
       return this.size;
     }
-    isEmpty()
+    IsEmpty()
     {
       return this.size === 0;
     }
