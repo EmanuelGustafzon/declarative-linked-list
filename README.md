@@ -1,18 +1,20 @@
 # Declartive Linked List
 ## Declarative Linked List is a Node.js library that provides a straightforward and intuitive way to work with linked lists using higher-order functions. It allows you to manipulate linked ## lists in a declarative manner, making your code more concise and expressive.
 
-Installation
+###Installation
+
 You can install Declarative Linked List via npm:
-
+```
 npm install declarative-linked-list
-
+```
 Get Started:
 
 const DoublyLinkedList = require('declarative-linked-list');
 
 // Create a new linked list
+```javascript
 const list = new DoublyLinkedList();
-
+```
 // Prepend elements to the list
 list.Prepend(1);
 list.PrependMany(2, 3, 4);
