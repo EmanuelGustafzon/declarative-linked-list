@@ -20,10 +20,10 @@ For manual operations.
 ```javascript
 list.head
 list.tail
-list.head.next
-list.tail.prev
 list.size
-
+node.next
+node.prev
+node.data
 ```
 Get size.
 ```javascript
