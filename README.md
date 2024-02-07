@@ -16,12 +16,12 @@ Create a new linked list.
 ```javascript
 const list = new DoublyLinkedList();
 ```
-Operations.
+For manual operations.
 ```javascript
 list.head
 list.tail
-ist.head.next
-list.head.prev
+list.head.next
+list.tail.prev
 list.size
 
 ```
@@ -29,7 +29,6 @@ Get size.
 ```javascript
 list.Size()
 list.IsEmpty()
-```
 ```
 Prepend elements to the list.
 ```javascript
@@ -62,7 +61,7 @@ Delete element at a specific index.
 ```javascript
 list.DeleteAt(2);
 ```
-Copy the hole linked list or a portion of it.
+Copy the hole linked list or a portion of it by adding start and end index.
 ```javascript
 const copy = list.Copy();
 const copyPortion = list.Copy(1, 3);
@@ -129,7 +128,10 @@ const goalOrder = ['A', 'K', 'Q', 'J']
 const sortedList = list.Sort((a, b) => goalOrder.indexOf(a) < goalOrder.indexOf(b) ? -1 : 1);
 ```
 ### API Methods:
-
+- PrintForward(): Print out in a string format from the head.
+    
+- PrintBackward(): Print out in a string format from the tail.
+  
 - Size(): Get the size.
 
 - IsEmpty(): true or false
