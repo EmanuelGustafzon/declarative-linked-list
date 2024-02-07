@@ -1,5 +1,5 @@
 # Declartive Linked List
-Declarative Linked List is a Node.js library that provides a straightforward and intuitive way to work with linked lists using higher-order functions. It allows you to manipulate linked lists in a declarative manner, making your code more concise and expressive.
+## Declarative Linked List is a Node.js library that provides a straightforward and intuitive way to work with linked lists using higher-order functions. It allows you to manipulate linked ## lists in a declarative manner, making your code more concise and expressive.
 
 Installation
 You can install Declarative Linked List via npm:
