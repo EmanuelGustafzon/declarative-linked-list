@@ -1,0 +1,37 @@
+{
+  "name": "declarative-linked-list",
+  "version": "1.0.0",
+  "description": "All ypu need to work with linked lists in a declarative and intuitive way with higher order functions like sort, map, filter and reduce etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmanuelGustafzon/declarative-linked-list.git"
+  },
+  "keywords": [
+    "linked-list",
+    "higher-order-functions",
+    "declarative",
+    "functional",
+    "programming",
+    "doubly-Linked-List",
+    "head",
+    "insertion",
+    "map",
+    "reduce",
+    "forEach",
+    "filter",
+    "sort."
+  ],
+  "author": "Emanuel Gustafzon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmanuelGustafzon/declarative-linked-list/issues"
+  },
+  "homepage": "https://github.com/EmanuelGustafzon/declarative-linked-list#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
