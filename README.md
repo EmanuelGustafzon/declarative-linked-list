@@ -16,6 +16,21 @@ Create a new linked list.
 ```javascript
 const list = new DoublyLinkedList();
 ```
+Operations.
+```javascript
+list.head
+list.tail
+ist.head.next
+list.head.prev
+list.size
+
+```
+Get size.
+```javascript
+list.Size()
+list.IsEmpty()
+```
+```
 Prepend elements to the list.
 ```javascript
 list.Prepend(1);
@@ -114,6 +129,10 @@ const goalOrder = ['A', 'K', 'Q', 'J']
 const sortedList = list.Sort((a, b) => goalOrder.indexOf(a) < goalOrder.indexOf(b) ? -1 : 1);
 ```
 ### API Methods:
+
+- Size(): Get the size.
+
+- IsEmpty(): true or false
 
 - Prepend(value): Inserts an element at the beginning of the list.
 
