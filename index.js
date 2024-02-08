@@ -55,7 +55,7 @@ class Node {
     }
     AppendMany(...values) 
     {
-        for (let i = values.length - 1; i >= 0; i--) {
+        for (let i = 0; i < values.length; i++) {
             this.Append(values[i]);
         }
     }

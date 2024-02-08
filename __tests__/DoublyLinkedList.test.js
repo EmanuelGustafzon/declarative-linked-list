@@ -24,12 +24,12 @@ test('prepend-many-to-list', () => {
     expect(result).toEqual("1, 2, 3, 4, 5, 10");
 });
 
-test('Apend-many-to-list', () => {
+test('Append-many-to-list', () => {
     const list = new DoublyLinkedList();
     list.Append(10);
     list.AppendMany(1, 2, 3, 4, 5);
     const result = list.PrintForward()
-    expect(result).toEqual("10, 5, 4, 3, 2, 1");
+    expect(result).toEqual("10, 1, 2, 3, 4, 5");
 });
 
 test('insert-at-to-list', () => {
