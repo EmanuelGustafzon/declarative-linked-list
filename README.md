@@ -117,7 +117,7 @@ Reduce the elements of the list to a single value
 ```javascript
 const sum = list.Reduce((acc, curr) => acc + curr, 0);
 ```
-Sort the elements of the list.
+Sort the elements of the list, determines order by the values 1 as greater, -1 as smaller and 0 as equal.
 - Numbers
 ```javascript
 const sortedList = list.Sort((a, b) => a - b); 
