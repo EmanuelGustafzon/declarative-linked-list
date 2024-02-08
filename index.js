@@ -64,9 +64,7 @@ class Node {
         if (index < 0) {
             throw new Error("Index cannot be a a negative number");
         }
-  
         const newNode = new Node(data);
-  
         if (index === 0) {
             newNode.next = this.head;
             if (this.head) {
@@ -95,6 +93,22 @@ class Node {
             this.size++;
         }
     }
+
+    Get(index){
+      let current = this.head;
+      let currentIndex = 0;
+
+      while (current && currentIndex < index) {
+          current = current.next;
+          currentIndex++;
+      }
+
+      if (!current && currentIndex < index) {
+          throw new Error("Index out of range");
+      }
+      return current.data;
+    }
+    
     DeleteFirst() 
     {
         if (!this.head) {
@@ -134,7 +148,7 @@ class Node {
         }
   
         if (index === 0) {
-            if (this.isEmpty()) {
+            if (this.IsEmpty()) {
                 throw new Error("List is empty, nothing to delete");
             }
             const removedData = this.head.data;
@@ -238,7 +252,7 @@ class Node {
       if(!list) {
         return;
       }
-      if(this.isEmpty()) {
+      if(this.IsEmpty()) {
         this.head = list.head;
         this.tail = list.tail;
       } else {

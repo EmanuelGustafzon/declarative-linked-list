@@ -40,6 +40,10 @@ Append elements to the list
 list.Append(3);
 list.AppendMany(4, 5, 6);
 ```
+Get a value by index.
+```javascript
+const value = list.Get(3);
+```
 Print out the list in a readable format.
 ```javascript
 const display = list.PrintForward()
@@ -66,7 +70,7 @@ Copy the hole linked list or a portion of it by adding start and end index.
 const copy = list.Copy();
 const copyPortion = list.Copy(1, 3);
 ```
-Reverse the linked list, returns a copy.
+Reverse the linked list. Returns a copy of the linked list.
 ```javascript
 const reversed = list.Reverse();
 ```
@@ -134,7 +138,9 @@ const sortedList = list.Sort((a, b) => goalOrder.indexOf(a) < goalOrder.indexOf(
   
 - Size(): Get the size.
 
-- IsEmpty(): true or false
+- IsEmpty(): True or false.
+
+- Get(index): Returns a value by index.
 
 - Prepend(value): Inserts an element at the beginning of the list.
 

@@ -40,6 +40,16 @@ test('insert-at-to-list', () => {
     expect(result).toEqual("1, 2, 10, 3, 4, 5");
 });
 
+test('get-item-by-index', () => {
+    const list = new DoublyLinkedList();
+    list.PrependMany(1, 2, 3, 4, 5);
+    const get3 = list.Get(3)
+    const get0 = list.Get(0)
+    const get4 = list.Get(4)
+    expect(get3).toBe(4)
+    expect(get0).toBe(1)
+    expect(get4).toBe(5)
+})
 test('delete-first', () => {
     const list = new DoublyLinkedList();
     list.PrependMany(1, 2, 3, 4, 5);
